@@ -1,4 +1,4 @@
-package item;
+package net.joykyo.slimeoverhaul.item;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
@@ -13,12 +13,15 @@ import net.minecraft.util.Identifier;
 public class Moditems {
     public static final Item SLIME_GOOB = registerItem("slime_goob", new Item(new FabricItemSettings()));
     public static final Item SLIME_INGOT = registerItem("slime_ingot", new Item(new FabricItemSettings()));
+    public static final Item STAMP_TEMPLATE = registerItem("stamp_template", new Item(new FabricItemSettings()));
+
 
 
 
     private static void addItemsToGradientTabItemGroup(FabricItemGroupEntries entries) {
         entries.add(SLIME_GOOB);
         entries.add(SLIME_INGOT);
+        entries.add(STAMP_TEMPLATE);
     }
 
     private static Item registerItem(String name, Item item) {

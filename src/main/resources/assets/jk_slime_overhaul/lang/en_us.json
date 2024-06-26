@@ -1,7 +1,10 @@
 {
-  "item.jk_slime_overhaul.minhamae": "Minha Mãe!",
   "item.jk_slime_overhaul.slime_goob": "Slime Goob",
   "item.jk_slime_overhaul.slime_ingot": "Slime Ingot",
+  "item.jk_slime_overhaul.stamp_template": "Stamp Template",
 
-  "itemgroup.slime": "Slime Overhaul"
+  "itemgroup.slime": "Slime Overhaul",
+
+  "effect.jk_slime_overhaul.slimed": "Slimed",
+  "effect.jk_slime_overhaul.stickyhead": "Sticky Head"
 }

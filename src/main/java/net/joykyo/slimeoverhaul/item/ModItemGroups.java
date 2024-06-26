@@ -1,4 +1,4 @@
-package item;
+package net.joykyo.slimeoverhaul.item;
 
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.joykyo.slimeoverhaul.SlimeOverhaul;
@@ -16,6 +16,7 @@ public class ModItemGroups {
                     .icon(() -> new ItemStack(Moditems.SLIME_GOOB)).entries((displayContext, entries) -> {
                         entries.add(Moditems.SLIME_GOOB);
                         entries.add(Moditems.SLIME_INGOT);
+                        entries.add(Moditems.STAMP_TEMPLATE);
                     }).build());
 
 
