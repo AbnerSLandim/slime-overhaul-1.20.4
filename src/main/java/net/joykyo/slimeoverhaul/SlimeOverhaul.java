@@ -1,5 +1,7 @@
 package net.joykyo.slimeoverhaul;
 
+import item.ModItemGroups;
+import item.Moditems;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -12,7 +14,8 @@ public class SlimeOverhaul implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-
+		ModItemGroups.registerItemGroups();
+		Moditems.registerModItems();
 		LOGGER.info("Hello Fabric world!");
 
 	}
