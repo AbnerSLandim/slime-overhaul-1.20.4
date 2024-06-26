@@ -2,6 +2,7 @@ package net.joykyo.slimeoverhaul.item;
 
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.joykyo.slimeoverhaul.SlimeOverhaul;
+import net.joykyo.slimeoverhaul.block.ModBlocks;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.registry.Registries;
@@ -17,6 +18,7 @@ public class ModItemGroups {
                         entries.add(Moditems.SLIME_GOOB);
                         entries.add(Moditems.SLIME_INGOT);
                         entries.add(Moditems.STAMP_TEMPLATE);
+                        entries.add(ModBlocks.SLIMEINGOTBLOCK);
                     }).build());
 
 

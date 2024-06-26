@@ -3,6 +3,7 @@ package net.joykyo.slimeoverhaul;
 import net.joykyo.slimeoverhaul.effect.SlimedEffect;
 import net.joykyo.slimeoverhaul.item.ModItemGroups;
 import net.joykyo.slimeoverhaul.item.Moditems;
+import net.joykyo.slimeoverhaul.block.ModBlocks;
 import net.fabricmc.api.ModInitializer;
 
 import net.minecraft.entity.effect.StatusEffect;
@@ -25,6 +26,7 @@ public class SlimeOverhaul implements ModInitializer {
 	public void onInitialize() {
 		ModItemGroups.registerItemGroups();
 		Moditems.registerModItems();
+		ModBlocks.registerModBlocks();
 		Registry.register(Registries.STATUS_EFFECT, new Identifier("jk_slime_overhaul", "slimed"), SLIMED);
 		Registry.register(Registries.STATUS_EFFECT, new Identifier("jk_slime_overhaul", "stickyhead"), STICKYHEAD);
 

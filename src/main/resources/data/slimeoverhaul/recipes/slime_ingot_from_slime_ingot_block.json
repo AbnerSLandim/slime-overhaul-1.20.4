@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key":{
+    "#":{
+      "item": "jk_slime_overhaul:slime_ingot"
+    }
+  },
+  "result" : {
+    "item": "jk_slime_overhaul:slime_ingot_block"
+  }
+}
