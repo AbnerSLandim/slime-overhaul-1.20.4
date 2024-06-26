@@ -14,10 +14,10 @@ public class ModItemGroups {
     public static final ItemGroup SLIME_GROUP = Registry.register(Registries.ITEM_GROUP,
             new Identifier(SlimeOverhaul.MOD_ID, "slime"),
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.slime"))
-                    .icon(() -> new ItemStack(Moditems.SLIME_GOOB)).entries((displayContext, entries) -> {
-                        entries.add(Moditems.SLIME_GOOB);
-                        entries.add(Moditems.SLIME_INGOT);
-                        entries.add(Moditems.STAMP_TEMPLATE);
+                    .icon(() -> new ItemStack(ModItems.SLIME_GOOB)).entries((displayContext, entries) -> {
+                        entries.add(ModItems.SLIME_GOOB);
+                        entries.add(ModItems.SLIME_INGOT);
+                        entries.add(ModItems.STAMP_TEMPLATE);
                         entries.add(ModBlocks.SLIMEINGOTBLOCK);
                     }).build());
 
