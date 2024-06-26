@@ -1,33 +1,38 @@
 package net.joykyo.slimeoverhaul.effect;
 
+import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.entity.effect.StatusEffectCategory;
-import net.minecraft.entity.LivingEntity;
-import net.minecraft.entity.player.PlayerEntity;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.Vec3d;
+import net.minecraft.world.World;
 
 public class SlimedEffect extends StatusEffect {
-    private static final Logger LOGGER = LoggerFactory.getLogger(SlimedEffect.class);
-
     public SlimedEffect(StatusEffectCategory category, int color) {
         super(category, color);
     }
 
     @Override
-    public void applyUpdateEffect(LivingEntity entity, int amplifier) {
-        if (entity instanceof PlayerEntity) {
-            PlayerEntity player = (PlayerEntity) entity;
-            if (player.isOnGround() && player.fallDistance > 0) {
-                player.setVelocity(player.getVelocity().x, 0.8, player.getVelocity().z); // Ajuste a força do impulso conforme necessário
-                player.fallDistance = 0;
-                LOGGER.info("Player {} bounced with SlimedEffect", player.getName().getString());
-            }
-        }
+    public boolean canApplyUpdateEffect(int duration, int amplifier) {
+        return true;
     }
 
     @Override
-    public boolean canApplyUpdateEffect(int duration, int amplifier) {
-        return true; // Isso garante que o efeito seja aplicado a cada tick
+    public void applyUpdateEffect(LivingEntity entity, int amplifier) {
+        World world = entity.getEntityWorld();
+        BlockPos pos = entity.getBlockPos();
+
+        // Check if the entity is falling
+        if (entity.isFallFlying() || entity.fallDistance > 0.0F) {
+            // Simulate slime block behavior
+            entity.handleFallDamage(entity.fallDistance, 0.0F, null); // Prevent fall damage
+            entity.fallDistance = 0.0F; // Reset fall distance
+
+            // Apply bounce effect: add vertical motion
+            Vec3d motion = entity.getVelocity();
+            entity.setVelocity(motion.x, 0.8 * motion.y, motion.z); // Adjust the multiplier as needed
+        }
+
+        super.applyUpdateEffect(entity, amplifier);
     }
 }
