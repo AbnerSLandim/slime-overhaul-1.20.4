@@ -2,7 +2,7 @@ package net.joykyo.slimeoverhaul;
 
 import net.joykyo.slimeoverhaul.effect.SlimedEffect;
 import net.joykyo.slimeoverhaul.item.ModItemGroups;
-import net.joykyo.slimeoverhaul.item.Moditems;
+import net.joykyo.slimeoverhaul.item.ModItems;
 import net.joykyo.slimeoverhaul.block.ModBlocks;
 import net.fabricmc.api.ModInitializer;
 
@@ -25,7 +25,7 @@ public class SlimeOverhaul implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		ModItemGroups.registerItemGroups();
-		Moditems.registerModItems();
+		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
 		Registry.register(Registries.STATUS_EFFECT, new Identifier("jk_slime_overhaul", "slimed"), SLIMED);
 		Registry.register(Registries.STATUS_EFFECT, new Identifier("jk_slime_overhaul", "stickyhead"), STICKYHEAD);
