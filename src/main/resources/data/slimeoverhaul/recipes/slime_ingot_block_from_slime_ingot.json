@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients" : [
+    {
+      "item": "jk_slime_overhaul:slime_ingot_block"
+    }
+  ],
+  "result":{
+    "item" :"jk_slime_overhaul:slime_ingot",
+    "count" : 9
+  }
+}

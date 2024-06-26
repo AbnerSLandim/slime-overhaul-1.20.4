@@ -1,7 +1,8 @@
-package item;
+package net.joykyo.slimeoverhaul.item;
 
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.joykyo.slimeoverhaul.SlimeOverhaul;
+import net.joykyo.slimeoverhaul.block.ModBlocks;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.registry.Registries;
@@ -13,9 +14,12 @@ public class ModItemGroups {
     public static final ItemGroup SLIME_GROUP = Registry.register(Registries.ITEM_GROUP,
             new Identifier(SlimeOverhaul.MOD_ID, "slime"),
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.slime"))
-                    .icon(() -> new ItemStack(Moditems.SLIME_GOOB)).entries((displayContext, entries) -> {
-                        entries.add(Moditems.SLIME_GOOB);
-                        entries.add(Moditems.SLIME_INGOT);
+                    .icon(() -> new ItemStack(ModItems.SLIME_GOOB)).entries((displayContext, entries) -> {
+                        entries.add(ModItems.SLIME_GOOB);
+                        entries.add(ModItems.SLIME_INGOT);
+
+                        entries.add(ModBlocks.SLIMEINGOTBLOCK);
+
                     }).build());
 
 

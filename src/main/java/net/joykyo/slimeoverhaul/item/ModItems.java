@@ -1,4 +1,4 @@
-package item;
+package net.joykyo.slimeoverhaul.item;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
@@ -10,11 +10,9 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 
-public class Moditems {
+public class ModItems {
     public static final Item SLIME_GOOB = registerItem("slime_goob", new Item(new FabricItemSettings()));
     public static final Item SLIME_INGOT = registerItem("slime_ingot", new Item(new FabricItemSettings()));
-
-
 
     private static void addItemsToGradientTabItemGroup(FabricItemGroupEntries entries) {
         entries.add(SLIME_GOOB);
@@ -28,6 +26,6 @@ public class Moditems {
     public static void registerModItems() {
         SlimeOverhaul.LOGGER.info("Registering Mod Items for " + SlimeOverhaul.MOD_ID);
 
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(Moditems::addItemsToGradientTabItemGroup);
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(ModItems::addItemsToGradientTabItemGroup);
     }
 }
