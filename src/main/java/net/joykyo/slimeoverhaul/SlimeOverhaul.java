@@ -1,6 +1,7 @@
 package net.joykyo.slimeoverhaul;
 
 import net.joykyo.slimeoverhaul.effect.SlimedEffect;
+import net.joykyo.slimeoverhaul.effect.StickyHeadEffect;
 import net.joykyo.slimeoverhaul.item.ModItemGroups;
 import net.joykyo.slimeoverhaul.item.ModItems;
 import net.joykyo.slimeoverhaul.block.ModBlocks;
@@ -19,7 +20,7 @@ public class SlimeOverhaul implements ModInitializer {
 	public static final String MOD_ID = "jk_slime_overhaul";
     public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 	public static final StatusEffect SLIMED = new SlimedEffect(StatusEffectCategory.HARMFUL, 0x98D982);
-	public static final StatusEffect STICKYHEAD = new SlimedEffect(StatusEffectCategory.HARMFUL, 0x98D982);
+	public static final StatusEffect STICKYHEAD = new StickyHeadEffect(StatusEffectCategory.HARMFUL, 0x98D982);
 
 
 	@Override
