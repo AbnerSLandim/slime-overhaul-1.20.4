@@ -19,6 +19,10 @@ public class ModItemGroups {
                         entries.add(ModItems.SLIME_INGOT);
                         entries.add(ModItems.STAMP_TEMPLATE);
                         entries.add(ModBlocks.SLIMEINGOTBLOCK);
+                        entries.add(ModItems.PETRIFIED_SLIME_BALL);
+                        entries.add(ModItems.FRIGID_SLIME_BALL);
+                        entries.add(ModItems.MOSSY_SLIME_BALL);
+
                     }).build());
 
 

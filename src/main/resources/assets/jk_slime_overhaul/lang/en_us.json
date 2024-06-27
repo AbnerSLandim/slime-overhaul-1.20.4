@@ -3,6 +3,10 @@
   "item.jk_slime_overhaul.slime_ingot": "Slime Ingot",
   "item.jk_slime_overhaul.stamp_template": "Stamp Template",
   "block.jk_slime_overhaul.slime_ingot_block": "Slime Ingot Block",
+  "item.jk_slime_overhaul.petrified_slime_ball": "Petrified Slime Ball",
+  "item.jk_slime_overhaul.frigid_slime_ball": "Frigid Slime Ball",
+  "item.jk_slime_overhaul.mossy_slime_ball": "Mossy Slime Ball",
+
 
   "itemgroup.slime": "Slime Overhaul",
 

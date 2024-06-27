@@ -14,12 +14,18 @@ public class ModItems {
     public static final Item SLIME_GOOB = registerItem("slime_goob", new Item(new FabricItemSettings()));
     public static final Item SLIME_INGOT = registerItem("slime_ingot", new Item(new FabricItemSettings()));
     public static final Item STAMP_TEMPLATE = registerItem("stamp_template", new Item(new FabricItemSettings()));
+    public static final Item PETRIFIED_SLIME_BALL = registerItem("petrified_slime_ball", new Item(new FabricItemSettings()));
+    public static final Item FRIGID_SLIME_BALL = registerItem("frigid_slime_ball", new Item(new FabricItemSettings()));
+    public static final Item MOSSY_SLIME_BALL = registerItem("mossy_slime_ball", new Item(new FabricItemSettings()));
 
 
     private static void addItemsToGradientTabItemGroup(FabricItemGroupEntries entries) {
         entries.add(SLIME_GOOB);
         entries.add(SLIME_INGOT);
         entries.add(STAMP_TEMPLATE);
+        entries.add(PETRIFIED_SLIME_BALL);
+        entries.add(FRIGID_SLIME_BALL);
+        entries.add(MOSSY_SLIME_BALL);
     }
 
     private static Item registerItem(String name, Item item) {
