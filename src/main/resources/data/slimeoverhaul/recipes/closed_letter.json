@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "jk_slime_overhaul:stamp_template"
+    },
+    {
+      "item": "jk_slime_overhaul:open_letter"
+    }
+  ],
+  "result": {
+    "item": "jk_slime_overhaul:closed_letter"
+  }
+}

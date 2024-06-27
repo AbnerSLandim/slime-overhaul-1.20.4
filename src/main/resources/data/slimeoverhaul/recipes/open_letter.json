@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:paper"
+    }
+  },
+  "result": {
+    "item": "jk_slime_overhaul:open_letter"
+  }
+}

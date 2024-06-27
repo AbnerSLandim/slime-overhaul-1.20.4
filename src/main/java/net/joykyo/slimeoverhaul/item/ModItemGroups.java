@@ -19,6 +19,8 @@ public class ModItemGroups {
                         entries.add(ModItems.SLIME_INGOT);
                         entries.add(ModItems.STAMP_TEMPLATE);
                         entries.add(ModBlocks.SLIMEINGOTBLOCK);
+                        entries.add(ModItems.OPEN_LETTER);
+                        entries.add(ModItems.CLOSED_LETTER);
                     }).build());
 
 

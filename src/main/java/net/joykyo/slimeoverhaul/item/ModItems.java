@@ -14,7 +14,8 @@ public class ModItems {
     public static final Item SLIME_GOOB = registerItem("slime_goob", new Item(new FabricItemSettings()));
     public static final Item SLIME_INGOT = registerItem("slime_ingot", new Item(new FabricItemSettings()));
     public static final Item STAMP_TEMPLATE = registerItem("stamp_template", new Item(new FabricItemSettings()));
-
+    public static final Item OPEN_LETTER = registerItem("open_letter",new Item(new FabricItemSettings()));
+    public static final Item CLOSED_LETTER = registerItem("closed_letter",new Item(new FabricItemSettings()));
 
     private static void addItemsToGradientTabItemGroup(FabricItemGroupEntries entries) {
         entries.add(SLIME_GOOB);
