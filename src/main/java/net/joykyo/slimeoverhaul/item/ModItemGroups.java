@@ -21,6 +21,12 @@ public class ModItemGroups {
                         entries.add(ModBlocks.SLIMEINGOTBLOCK);
                         entries.add(ModItems.OPEN_LETTER);
                         entries.add(ModItems.CLOSED_LETTER);
+                        entries.add(ModItems.PETRIFIED_SLIME_BALL);
+                        entries.add(ModItems.FRIGID_SLIME_BALL);
+                        entries.add(ModItems.MOSSY_SLIME_BALL);
+                        entries.add(ModItems.OPEN_LETTER);
+                        entries.add(ModItems.CLOSED_LETTER);
+
                     }).build());
 
 

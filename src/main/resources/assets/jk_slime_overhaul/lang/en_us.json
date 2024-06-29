@@ -5,6 +5,10 @@
   "block.jk_slime_overhaul.slime_ingot_block": "Slime Ingot Block",
   "item.jk_slime_overhaul.open_letter": "Open Letter",
   "item.jk_slime_overhaul.closed_letter": "Closed Letter",
+  "item.jk_slime_overhaul.petrified_slime_ball": "Petrified Slime Ball",
+  "item.jk_slime_overhaul.frigid_slime_ball": "Frigid Slime Ball",
+  "item.jk_slime_overhaul.mossy_slime_ball": "Mossy Slime Ball",
+
 
   "itemgroup.slime": "Slime Overhaul",
 
