@@ -2,12 +2,21 @@
   "item.jk_slime_overhaul.slime_goob": "Slime Goob",
   "item.jk_slime_overhaul.slime_ingot": "Slime Ingot",
   "item.jk_slime_overhaul.stamp_template": "Stamp Template",
+<<<<<<< Updated upstream
   "block.jk_slime_overhaul.slime_ingot_block": "Slime Ingot Block",
   "item.jk_slime_overhaul.open_letter": "Open Letter",
   "item.jk_slime_overhaul.closed_letter": "Closed Letter",
+=======
+>>>>>>> Stashed changes
   "item.jk_slime_overhaul.petrified_slime_ball": "Petrified Slime Ball",
   "item.jk_slime_overhaul.frigid_slime_ball": "Frigid Slime Ball",
   "item.jk_slime_overhaul.mossy_slime_ball": "Mossy Slime Ball",
+
+  "item.jk_slime_overhaul.slime_gauntlet": "Slime Gauntlet",
+
+  "block.jk_slime_overhaul.slime_ingot_block": "Slime Ingot Block",
+  "block.jk_slime_overhaul.slime_ore": "Slime Ore",
+  "block.jk_slime_overhaul.deepslate_slime_ore": "Deepslate Slime Ore",
 
 
   "itemgroup.slime": "Slime Overhaul",
