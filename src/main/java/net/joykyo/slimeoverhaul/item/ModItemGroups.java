@@ -19,13 +19,10 @@ public class ModItemGroups {
                         entries.add(ModItems.SLIME_INGOT);
                         entries.add(ModItems.STAMP_TEMPLATE);
                         entries.add(ModBlocks.SLIMEINGOTBLOCK);
-<<<<<<< Updated upstream
                         entries.add(ModItems.OPEN_LETTER);
                         entries.add(ModItems.CLOSED_LETTER);
-=======
                         entries.add(ModBlocks.SLIME_ORE);
                         entries.add(ModBlocks.DEEPSLATE_SLIME_ORE);
->>>>>>> Stashed changes
                         entries.add(ModItems.PETRIFIED_SLIME_BALL);
                         entries.add(ModItems.FRIGID_SLIME_BALL);
                         entries.add(ModItems.MOSSY_SLIME_BALL);

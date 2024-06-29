@@ -17,6 +17,8 @@ public class ModItems {
     public static final Item PETRIFIED_SLIME_BALL = registerItem("petrified_slime_ball", new Item(new FabricItemSettings()));
     public static final Item FRIGID_SLIME_BALL = registerItem("frigid_slime_ball", new Item(new FabricItemSettings()));
     public static final Item MOSSY_SLIME_BALL = registerItem("mossy_slime_ball", new Item(new FabricItemSettings()));
+    public static final Item OPEN_LETTER = registerItem("open_letter", new Item(new FabricItemSettings()));
+    public static final Item CLOSED_LETTER = registerItem("closed_letter", new Item(new FabricItemSettings()));
 
     public static final Item SLIME_GAUNTLET = registerItem("slime_gauntlet",
             new Item(new FabricItemSettings().maxCount(1)));
@@ -29,6 +31,8 @@ public class ModItems {
         entries.add(PETRIFIED_SLIME_BALL);
         entries.add(FRIGID_SLIME_BALL);
         entries.add(MOSSY_SLIME_BALL);
+        entries.add(OPEN_LETTER);
+        entries.add(CLOSED_LETTER);
     }
 
     private static Item registerItem(String name, Item item) {
