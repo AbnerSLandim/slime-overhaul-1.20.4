@@ -11,7 +11,7 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 
 public class ModItems {
-    public static final Item SLIME_GOOB = registerItem("slime_goob", new Item(new FabricItemSettings()));
+    public static final Item SLIME_GOO = registerItem("slime_goo", new Item(new FabricItemSettings()));
     public static final Item SLIME_INGOT = registerItem("slime_ingot", new Item(new FabricItemSettings()));
     public static final Item STAMP_TEMPLATE = registerItem("stamp_template", new Item(new FabricItemSettings()));
     public static final Item PETRIFIED_SLIME_BALL = registerItem("petrified_slime_ball", new Item(new FabricItemSettings()));
@@ -25,7 +25,7 @@ public class ModItems {
 
 
     private static void addItemsToGradientTabItemGroup(FabricItemGroupEntries entries) {
-        entries.add(SLIME_GOOB);
+        entries.add(SLIME_GOO);
         entries.add(SLIME_INGOT);
         entries.add(STAMP_TEMPLATE);
         entries.add(PETRIFIED_SLIME_BALL);
