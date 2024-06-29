@@ -7,6 +7,7 @@ import net.joykyo.slimeoverhaul.item.ModItems;
 import net.joykyo.slimeoverhaul.block.ModBlocks;
 import net.fabricmc.api.ModInitializer;
 
+import net.joykyo.slimeoverhaul.world.gen.ModWorldGeneration;
 import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.entity.effect.StatusEffectCategory;
 import net.minecraft.registry.Registries;
@@ -32,6 +33,6 @@ public class SlimeOverhaul implements ModInitializer {
 		Registry.register(Registries.STATUS_EFFECT, new Identifier("jk_slime_overhaul", "stickyhead"), STICKYHEAD);
 
 		LOGGER.info("Hello Fabric world!");
-
+		ModWorldGeneration.generateModWorldGen();
 	}
 }
