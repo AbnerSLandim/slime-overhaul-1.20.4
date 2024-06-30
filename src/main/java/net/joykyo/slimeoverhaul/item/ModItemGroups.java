@@ -27,6 +27,7 @@ public class ModItemGroups {
                         entries.add(ModItems.FRIGID_SLIME_BALL);
                         entries.add(ModItems.MOSSY_SLIME_BALL);
                         entries.add(ModItems.SLIME_GAUNTLET);
+                        entries.add(ModBlocks.MAILBOX);
 
                     }).build());
 
