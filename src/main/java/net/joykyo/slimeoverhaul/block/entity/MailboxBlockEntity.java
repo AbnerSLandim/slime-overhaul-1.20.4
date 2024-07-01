@@ -75,14 +75,14 @@ public class MailboxBlockEntity extends BlockEntity implements ExtendedScreenHan
     protected void writeNbt(NbtCompound nbt) {
         super.writeNbt(nbt);
         Inventories.writeNbt(nbt, inventory);
-        nbt.putInt("mailbox", progress);
+        nbt.putInt("mailbox.progress", progress);
     }
 
     @Override
     public void readNbt(NbtCompound nbt) {
         super.readNbt(nbt);
         Inventories.readNbt(nbt, inventory);
-        progress= nbt.getInt("mailbox");
+        progress= nbt.getInt("mailbox.progress");
     }
 
     @Nullable
@@ -99,6 +99,7 @@ public class MailboxBlockEntity extends BlockEntity implements ExtendedScreenHan
             if (this.hasRecipe()){
                 this.increaseCraftProgress();
                 markDirty(world, pos, state);
+
                 if (hasCraftingFinished()){
                     this.craftItem();
                     this.resetProgress();

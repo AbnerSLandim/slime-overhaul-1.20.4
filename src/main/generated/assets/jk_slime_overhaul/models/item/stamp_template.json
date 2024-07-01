@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "jk_slime_overhaul:item/stamp_template"
+  }
+}

@@ -20,7 +20,7 @@ public class ModItems {
     public static final Item OPEN_LETTER = registerItem("open_letter", new Item(new FabricItemSettings()));
     public static final Item CLOSED_LETTER = registerItem("closed_letter", new Item(new FabricItemSettings()));
 
-    public static final Item SLIME_GAUNTLET = registerItem("slime_gauntlet",
+    public static final Item SLIME_GAUNTLET = registerItem("slime_gauntlet_3d",
             new Item(new FabricItemSettings().maxCount(1)));
 
 

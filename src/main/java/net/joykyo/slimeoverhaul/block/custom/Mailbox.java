@@ -20,7 +20,7 @@ import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
 
 public class Mailbox extends BlockWithEntity implements BlockEntityProvider {
-    private static final VoxelShape SHAPE = BlockWithEntity.createCuboidShape(0, 0, 0, 0, 0, 0);
+    private static final VoxelShape SHAPE = BlockWithEntity.createCuboidShape(0, 0, 0, 16, 12, 16);
     public Mailbox(Settings settings){
         super(settings);
     }

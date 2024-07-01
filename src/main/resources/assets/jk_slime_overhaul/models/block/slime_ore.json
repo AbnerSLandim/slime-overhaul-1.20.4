@@ -1,6 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "all": "jk_slime_overhaul:block/slime_ore"
-  }
-}
