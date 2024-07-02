@@ -14,8 +14,8 @@ public class ModItemGroups {
     public static final ItemGroup SLIME_GROUP = Registry.register(Registries.ITEM_GROUP,
             new Identifier(SlimeOverhaul.MOD_ID, "slime"),
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.slime"))
-                    .icon(() -> new ItemStack(ModItems.SLIME_GOOB)).entries((displayContext, entries) -> {
-                        entries.add(ModItems.SLIME_GOOB);
+                    .icon(() -> new ItemStack(ModBlocks.SLIME_ORE)).entries((displayContext, entries) -> {
+                        entries.add(ModItems.SLIME_GOO);
                         entries.add(ModItems.SLIME_INGOT);
                         entries.add(ModItems.STAMP_TEMPLATE);
                         entries.add(ModBlocks.SLIMEINGOTBLOCK);

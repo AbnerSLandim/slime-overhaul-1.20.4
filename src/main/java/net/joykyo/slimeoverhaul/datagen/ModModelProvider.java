@@ -1,5 +1,6 @@
 package net.joykyo.slimeoverhaul.datagen;
 
+
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.joykyo.slimeoverhaul.block.ModBlocks;
@@ -28,7 +29,6 @@ public class ModModelProvider extends FabricModelProvider {
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
         //itemModelGenerator.register(ModItems.{Nome Item}, Models.GENERATE)
-        itemModelGenerator.register(ModItems.SLIME_GOOB, Models.GENERATED);
         itemModelGenerator.register(ModItems.SLIME_INGOT, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.MOSSY_SLIME_BALL, Models.GENERATED);

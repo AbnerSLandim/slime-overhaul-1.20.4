@@ -1,5 +1,6 @@
 package net.joykyo.slimeoverhaul.datagen;
 
+
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
 import net.joykyo.slimeoverhaul.block.ModBlocks;
@@ -18,4 +19,5 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.DEEPSLATE_SLIME_ORE, oreDrops(ModBlocks.DEEPSLATE_SLIME_ORE, ModItems.PETRIFIED_SLIME_BALL));
         addDrop(ModBlocks.SLIME_ORE,oreDrops(ModBlocks.SLIME_ORE, ModItems.PETRIFIED_SLIME_BALL) );
     }
+
 }

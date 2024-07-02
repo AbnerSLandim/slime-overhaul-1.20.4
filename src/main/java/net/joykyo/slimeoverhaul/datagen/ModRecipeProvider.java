@@ -34,20 +34,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.STAMP_TEMPLATE), conditionsFromItem(ModItems.STAMP_TEMPLATE))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.CLOSED_LETTER)));
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.SLIME_GOOB,1 )
-                .pattern(" # ")
-                .pattern("#L#")
-                .pattern(" # ")
-                .criterion(hasItem(Items.SLIME_BALL), conditionsFromItem(Items.SLIME_BALL))
-                .criterion(hasItem(Items.LAPIS_LAZULI), conditionsFromItem(Items.LAPIS_LAZULI))
-                .offerTo(exporter, new Identifier(getRecipeName(ModItems.SLIME_GOOB)));
-
-        offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, ModItems.SLIME_INGOT,
-                RecipeCategory.DECORATIONS, ModBlocks.SLIMEINGOTBLOCK);
-
-
-        offerCompactingRecipe(exporter, RecipeCategory.MISC, ModItems.SLIME_INGOT, ModItems.SLIME_GOOB, hasItem(ModItems.SLIME_GOOB) );
-
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.STAMP_TEMPLATE,1)
                 .pattern("###")
                 .pattern("#S#")
@@ -60,6 +46,4 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
 
     }
-
-
 }
