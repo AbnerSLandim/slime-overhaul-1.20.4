@@ -20,6 +20,7 @@ public class ModModelProvider extends FabricModelProvider {
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SLIME_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.PETRIFIED_SLIME_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DEEPSLATE_SLIME_ORE);
 
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SLIMEINGOTBLOCK);
@@ -34,7 +35,12 @@ public class ModModelProvider extends FabricModelProvider {
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
         //itemModelGenerator.register(ModItems.{Nome Item}, Models.GENERATE)
+        itemModelGenerator.register(ModItems.SLIME_GOO, Models.GENERATED);
+        itemModelGenerator.register(ModItems.SUSPECT_GOO, Models.GENERATED);
         itemModelGenerator.register(ModItems.SLIME_INGOT, Models.GENERATED);
+
+        itemModelGenerator.register(ModItems.ADRENA, Models.GENERATED);
+        itemModelGenerator.register(ModItems.GLOUP, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.MOSSY_SLIME_BALL, Models.GENERATED);
         itemModelGenerator.register(ModItems.FRIGID_SLIME_BALL, Models.GENERATED);
