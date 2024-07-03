@@ -1,5 +1,6 @@
 {
   "item.jk_slime_overhaul.slime_goo": "Slime Goo",
+  "item.jk_slime_overhaul.suspect_goo": "Suspect Goo",
   "item.jk_slime_overhaul.slime_ingot": "Slime Ingot",
   "item.jk_slime_overhaul.stamp_template": "Stamp Template",
   "item.jk_slime_overhaul.open_letter": "Open Letter",
@@ -8,9 +9,16 @@
   "item.jk_slime_overhaul.frigid_slime_ball": "Frigid Slime Ball",
   "item.jk_slime_overhaul.mossy_slime_ball": "Mossy Slime Ball",
 
+  "item.jk_slime_overhaul.gloup": "Gloup",
+  "item.jk_slime_overhaul.gloup_seeds": "Gloup Seeds",
+  "item.jk_slime_overhaul.adrena": "Adrena",
+  "item.jk_slime_overhaul.adrena_seeds": "Adrena Seeds",
+
+
   "item.jk_slime_overhaul.slime_gauntlet": "Slime Gauntlet",
 
   "block.jk_slime_overhaul.slime_ingot_block": "Slime Ingot Block",
+  "block.jk_slime_overhaul.petrified_slime_block": "Petrified Slime Block",
   "block.jk_slime_overhaul.slime_ore": "Slime Ore",
   "block.jk_slime_overhaul.deepslate_slime_ore": "Deepslate Slime Ore",
   "block.jk_slime_overhaul.mailbox": "Mailbox",

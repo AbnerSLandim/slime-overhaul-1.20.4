@@ -4,6 +4,8 @@ package net.joykyo.slimeoverhaul.datagen;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.joykyo.slimeoverhaul.block.ModBlocks;
+import net.joykyo.slimeoverhaul.block.custom.AdrenaCropBlock;
+import net.joykyo.slimeoverhaul.block.custom.GloupCropBlock;
 import net.joykyo.slimeoverhaul.item.ModItems;
 import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.ItemModelGenerator;
@@ -24,6 +26,9 @@ public class ModModelProvider extends FabricModelProvider {
 
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.MAILBOX);
 
+        // Registrar Plantação na geração de mundo
+        blockStateModelGenerator.registerCrop(ModBlocks.GLOUP_CROP, GloupCropBlock.AGE, 0, 1, 2, 3, 4, 5);
+        blockStateModelGenerator.registerCrop(ModBlocks.ADRENA_CROP, AdrenaCropBlock.AGE, 0, 1, 2, 3, 4, 5);
     }
 
     @Override

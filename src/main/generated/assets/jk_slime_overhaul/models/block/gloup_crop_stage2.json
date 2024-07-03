@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/crop",
+  "textures": {
+    "crop": "jk_slime_overhaul:block/gloup_crop_stage2"
+  }
+}

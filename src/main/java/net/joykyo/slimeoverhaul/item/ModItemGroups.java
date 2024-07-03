@@ -16,6 +16,7 @@ public class ModItemGroups {
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.slime"))
                     .icon(() -> new ItemStack(ModBlocks.SLIME_ORE)).entries((displayContext, entries) -> {
                         entries.add(ModItems.SLIME_GOO);
+                        entries.add(ModItems.SUSPECT_GOO);
                         entries.add(ModItems.SLIME_INGOT);
                         entries.add(ModItems.STAMP_TEMPLATE);
                         entries.add(ModBlocks.SLIMEINGOTBLOCK);
@@ -23,11 +24,16 @@ public class ModItemGroups {
                         entries.add(ModItems.CLOSED_LETTER);
                         entries.add(ModBlocks.SLIME_ORE);
                         entries.add(ModBlocks.DEEPSLATE_SLIME_ORE);
+                        entries.add(ModBlocks.PETRIFIED_SLIME_BLOCK);
                         entries.add(ModItems.PETRIFIED_SLIME_BALL);
                         entries.add(ModItems.FRIGID_SLIME_BALL);
                         entries.add(ModItems.MOSSY_SLIME_BALL);
-                        entries.add(ModItems.SLIME_GAUNTLET);
+                        entries.add(ModItems.GLOUP);
+                        entries.add(ModItems.ADRENA);
+                        entries.add(ModItems.GLOUP_SEEDS);
+                        entries.add(ModItems.ADRENA_SEEDS);
                         entries.add(ModBlocks.MAILBOX);
+                        entries.add(ModItems.SLIME_GAUNTLET);
 
                     }).build());
 
