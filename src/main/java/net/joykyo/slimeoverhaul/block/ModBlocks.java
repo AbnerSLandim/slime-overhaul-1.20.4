@@ -5,7 +5,7 @@ import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.joykyo.slimeoverhaul.SlimeOverhaul;
 import net.joykyo.slimeoverhaul.block.custom.AdrenaCropBlock;
 import net.joykyo.slimeoverhaul.block.custom.GloupCropBlock;
-import net.joykyo.slimeoverhaul.block.custom.Mailbox;
+import net.joykyo.slimeoverhaul.block.custom.MailboxBlock;
 import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -26,7 +26,7 @@ public class ModBlocks {
 
     // Caixa de Correio
     public static final Block MAILBOX = registerBlock("mailbox",
-            new Mailbox(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).nonOpaque()));
+            new MailboxBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).nonOpaque()));
 
     // Plantação
     public static final Block GLOUP_CROP = Registry.register(Registries.BLOCK, new Identifier(SlimeOverhaul.MOD_ID, "gloup_crop"),

@@ -10,8 +10,15 @@ import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 
 public class MailboxScreen extends HandledScreen<MailboxScreenHandler> {
-    private static final Identifier TEXTURE = new Identifier(SlimeOverhaul.MOD_ID, "textures/gui/test_gui.PNG");
+    private static final Identifier TEXTURE = new Identifier(SlimeOverhaul.MOD_ID, "textures/gui/teste_gui.png");
 
+
+    @Override
+    protected void init(){
+        super.init();
+        titleY = 1000;
+        playerInventoryTitleY = 1000;
+    }
     public MailboxScreen(MailboxScreenHandler handler, PlayerInventory inventory, Text title) {
         super(handler, inventory, title);
     }

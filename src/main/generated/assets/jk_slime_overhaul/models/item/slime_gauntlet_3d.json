@@ -3,8 +3,8 @@
 	"ambientocclusion": false,
 	"texture_size": [64, 64],
 	"textures": {
-		"0": "slime_gauntlet_3d",
-		"particle": "slime_gauntlet_3d"
+		"0": "jk_slime_overhaul:item/slime_gauntlet_3d",
+		"particle": "jk_slime_overhaul:item/slime_gauntlet_3d"
 	},
 	"elements": [
 		{

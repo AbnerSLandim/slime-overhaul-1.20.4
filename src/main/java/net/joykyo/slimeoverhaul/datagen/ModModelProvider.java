@@ -25,7 +25,9 @@ public class ModModelProvider extends FabricModelProvider {
 
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SLIMEINGOTBLOCK);
 
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.MAILBOX);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.PETRIFIED_SLIME_BLOCK);
+
+        blockStateModelGenerator.registerSimpleState(ModBlocks.MAILBOX);
 
         // Registrar Plantação na geração de mundo
         blockStateModelGenerator.registerCrop(ModBlocks.GLOUP_CROP, GloupCropBlock.AGE, 0, 1, 2, 3, 4, 5);
@@ -49,5 +51,9 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.OPEN_LETTER, Models.GENERATED);
         itemModelGenerator.register(ModItems.CLOSED_LETTER, Models.GENERATED);
         itemModelGenerator.register(ModItems.STAMP_TEMPLATE, Models.GENERATED);
+
+        itemModelGenerator.register(ModItems.ADRENA,Models.GENERATED);
+        itemModelGenerator.register(ModItems.GLOUP, Models.GENERATED);
+        itemModelGenerator.register(ModItems.SUSPECT_GOO,Models.GENERATED);
     }
 }
