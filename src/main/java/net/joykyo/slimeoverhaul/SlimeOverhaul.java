@@ -1,8 +1,11 @@
 package net.joykyo.slimeoverhaul;
 
+import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
 import net.joykyo.slimeoverhaul.block.entity.ModBlockEntities;
 import net.joykyo.slimeoverhaul.effect.SlimedEffect;
 import net.joykyo.slimeoverhaul.effect.StickyHeadEffect;
+import net.joykyo.slimeoverhaul.entity.ModEntities;
+import net.joykyo.slimeoverhaul.entity.custom.IceSlimeEntity;
 import net.joykyo.slimeoverhaul.item.ModItemGroups;
 import net.joykyo.slimeoverhaul.item.ModItems;
 import net.joykyo.slimeoverhaul.block.ModBlocks;
@@ -39,5 +42,26 @@ public class SlimeOverhaul implements ModInitializer {
 		ModScreenHandlers.registerScreenHandlers();
 		LOGGER.info("Hello Fabric world!");
 		ModWorldGeneration.generateModWorldGen();
+		ModEntities.registerModEntities();
+
+		//Atributos mobs
+		FabricDefaultAttributeRegistry.register(ModEntities.ICE_SLIME, IceSlimeEntity.createIceSlimeAttributes());
+
 	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

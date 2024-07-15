@@ -20,14 +20,16 @@ import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
 
 public class MailboxBlock extends BlockWithEntity implements BlockEntityProvider {
-    private static final VoxelShape SHAPE = BlockWithEntity.createCuboidShape(0, 0, 0,2 , 18, 2);
+    private static final VoxelShape SHAPE = BlockWithEntity.createCuboidShape(0, 0, 0,2 , 18, 2).offset(0.44,0,0.44);
     public MailboxBlock(Settings settings){
         super(settings);
+
     }
 
     @Override
     public VoxelShape getOutlineShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
         return SHAPE;
+
     }
 
     @Override
