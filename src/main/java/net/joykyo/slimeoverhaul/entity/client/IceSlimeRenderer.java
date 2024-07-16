@@ -24,7 +24,18 @@ public class IceSlimeRenderer extends MobEntityRenderer<IceSlimeEntity, IceSlime
     public void render(IceSlimeEntity mobEntity, float f, float g, MatrixStack matrixStack,
                        VertexConsumerProvider vertexConsumerProvider, int i) {
 
+        float tamanho = mobEntity.getSize();
+
+
+        if (tamanho != 0){
+            matrixStack.scale(tamanho , tamanho, tamanho);
+
+        }
+
+
         super.render(mobEntity, f, g, matrixStack, vertexConsumerProvider, i);
+
+
     }
 }
 
